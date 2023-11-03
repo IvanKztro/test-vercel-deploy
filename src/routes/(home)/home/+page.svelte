@@ -23,7 +23,6 @@
   productsFilterStore.set(data?.products?.edges);
   formsStore.set(data?.forms.category);
 
-  // console.log(data?.products?.edges);
   let filterevents = [];
 
   onMount(() => {
