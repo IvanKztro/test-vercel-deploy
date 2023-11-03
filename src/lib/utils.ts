@@ -2,6 +2,7 @@ import { goto } from "$app/navigation";
 import { productName } from "./stores/cart-store";
 import { currentEvent } from "./stores/event-store";
 import { Country, State, City } from "country-state-city";
+import Cookies from "js-cookie";
 
 export function handleAuthError(errorCode: string) {
   let error: string = "";
@@ -103,24 +104,36 @@ export function deleteCookieData(name: string) {
   document.cookie = `${name}=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;`;
 }
 
-export function getCookieData(cname: string) {
-  let name = cname + "=";
-  let decodedCookie = decodeURIComponent(document.cookie);
-  let ca = decodedCookie.split(";");
-  if (ca?.length > 0)
-    for (let i = 0; i < ca.length; i++) {
-      let c = ca[i];
-      while (c.charAt(0) == " ") {
-        c = c.substring(1);
-      }
-      if (c.indexOf(name) == 0) {
-        const data = c.substring(name.length, c.length);
-        const json: any = JSON.parse(data as string);
-        return json;
-      }
+export function getCookieData(cname) {
+  const cookieData = Cookies.get(cname);
+  if (cookieData) {
+    try {
+      return JSON.parse(cookieData);
+    } catch (error) {
+      console.error("Error al analizar JSON de la cookie:", error);
     }
+  }
   return null;
 }
+
+// export function getCookieData(cname: string) {
+//   let name = cname + "=";
+//   let decodedCookie = decodeURIComponent(document.cookie);
+//   let ca = decodedCookie.split(";");
+//   if (ca?.length > 0)
+//     for (let i = 0; i < ca.length; i++) {
+//       let c = ca[i];
+//       while (c.charAt(0) == " ") {
+//         c = c.substring(1);
+//       }
+//       if (c.indexOf(name) == 0) {
+//         const data = c.substring(name.length, c.length);
+//         const json: any = JSON.parse(data as string);
+//         return json;
+//       }
+//     }
+//   return null;
+// }
 
 // export function splitRoute(route: any) {
 //   const split = route.split("/");
