@@ -104,11 +104,18 @@ export function deleteCookieData(name: string) {
   document.cookie = `${name}=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;`;
 }
 
-export function getCookieData(cname) {
+export function getCookieData(cname: string) {
+  console.log("cname");
+  console.log(cname);
   const cookieData = Cookies.get(cname);
+  console.log("cookieData");
+  console.log(cookieData);
   if (cookieData) {
     try {
-      return JSON.parse(cookieData);
+      const data = JSON.parse(cookieData);
+      console.log("data");
+      console.log(data);
+      return data;
     } catch (error) {
       console.error("Error al analizar JSON de la cookie:", error);
     }
