@@ -18,8 +18,11 @@ export const load: PageServerLoad = async ({ params, locals, cookies }) => {
 
     const resforms = await getForms();
 
+    console.log(cookies.getAll());
     const rescheckoutstatus = cookies.get(`checkout-process`);
     if (rescheckoutstatus) statuscheckout = await JSON.parse(rescheckoutstatus);
+
+    console.log(rescheckoutstatus);
 
     if (statuscheckout) throw redirect(302, `/event/${statuscheckout.event}`);
     if (products) {

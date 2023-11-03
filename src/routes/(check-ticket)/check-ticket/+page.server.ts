@@ -9,8 +9,11 @@ export const load = async ({ locals, cookies }) => {
     const products = res.body?.data?.collections?.edges;
     const datares = await getEvents(products);
 
+    console.log(cookies.getAll());
     const rescheckoutstatus = cookies.get(`checkout-process`);
     if (rescheckoutstatus) statuscheckout = await JSON.parse(rescheckoutstatus);
+
+    console.log(rescheckoutstatus);
 
     if (statuscheckout) throw redirect(302, `/event/${statuscheckout.event}`);
     if (products) {

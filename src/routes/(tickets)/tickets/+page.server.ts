@@ -9,8 +9,11 @@ export const load: PageServerLoad = async ({ params, locals, cookies }) => {
   let statuscheckout = null;
 
   const rescheckoutstatus = cookies.get(`checkout-process`);
+  console.log(cookies.getAll());
+  //  const rescheckoutstatus = cookies.get(`checkout-process`);
   if (rescheckoutstatus) statuscheckout = await JSON.parse(rescheckoutstatus);
 
+  console.log(rescheckoutstatus);
   if (statuscheckout) throw redirect(302, `/event/${statuscheckout.event}`);
 
   const resOrders = await getCustomerOrders(user.accessToken);
