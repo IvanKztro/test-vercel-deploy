@@ -1,0 +1,117 @@
+@import "intl-tel-input/build/css/intlTelInput.css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* @import url("https://fonts.googleapis.com/css?family=Raleway"); */
+
+@font-face {
+  font-family: "Raleway-Thin";
+  src: url("/src/static/fonts/Raleway-Thin.ttf");
+}
+
+@font-face {
+  font-family: "Raleway-Regular";
+  src: url("/src/static/fonts/Raleway-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Raleway-Medium";
+  src: url("/src/static/fonts/Raleway-Medium.ttf");
+}
+
+@font-face {
+  font-family: "Raleway-SemiBold";
+  src: url("/src/static/fonts/Raleway-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "Raleway-Bold";
+  src: url("/src/static/fonts/Raleway-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Raleway-ExtraBold";
+  src: url("/src/static/fonts/Raleway-ExtraBold.ttf");
+}
+
+@font-face {
+  font-family: "Raleway-Black";
+  src: url("/src/static/fonts/Raleway-Black.ttf");
+}
+
+@font-face {
+  font-family: "Raleway-Light";
+  src: url("/src/static/fonts/Raleway-Light.ttf");
+}
+
+/* @layer base {
+  html {
+    font-family: Raleway;
+  }
+} */
+
+h1 {
+  font-family: "Raleway-ExtraBold";
+}
+
+h2 {
+  font-family: "Raleway-Bold";
+}
+h3 {
+  font-family: "Raleway-SemiBold";
+}
+p,
+span,
+a,
+small,
+h4,
+h5 {
+  font-family: "Raleway-Medium";
+}
+
+.select {
+  background-image: url("/src/static/icons/menu-arrow-down.svg");
+  background-position: calc(100% - 12px);
+  background-size: 1.3rem;
+}
+
+.collapse-arrow {
+  background-image: url("/src/static/icons/menu-arrow-down.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.iti__arrow {
+  margin-left: 6px !important;
+  margin-right: 6px !important;
+  width: 16px !important;
+  height: 100% !important;
+  border: none !important;
+  background-image: url("/src/static/icons/menu-arrow-down.svg") !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: 1.1rem !important;
+}
+.iti--allow-dropdown input,
+.iti--allow-dropdown input[type="text"],
+.iti--allow-dropdown input[type="tel"],
+.iti--separate-dial-code input,
+.iti--separate-dial-code input[type="text"],
+.iti--separate-dial-code input[type="tel"] {
+  padding-left: 62px;
+}
+.iti {
+  width: 100%;
+}
+
+.iti__flag-container {
+  background-color: transparent !important;
+}
+
+.iti--separate-dial-code .iti__selected-flag {
+  background-color: transparent !important;
+}
+
+.iti--separate-dial-code .iti__selected-flag:hover {
+  background-color: rgba(0, 0, 0, 0.05) !important;
+}
