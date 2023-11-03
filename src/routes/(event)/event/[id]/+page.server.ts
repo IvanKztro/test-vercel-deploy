@@ -13,6 +13,8 @@ export const load = async ({ params, locals, cookies }) => {
   let datares;
   let checkoutdata = null;
 
+  console.log(`checkout-${params.id}-${locals.userdata.firebaseID}`);
+
   const cookiecheckout = cookies.get(
     `checkout-${params.id}-${locals.userdata.firebaseID}`
   );
@@ -28,11 +30,14 @@ export const load = async ({ params, locals, cookies }) => {
 
   console.log("checkoutdata");
   console.log(checkoutdata);
+  console.log(`cart-${handle}-id-${locals.userdata.firebaseID}`);
 
   const cartid = cookies.get(`cart-${handle}-id-${locals.userdata.firebaseID}`);
   if (cartid) {
     const resCart = await loadCart(cartid);
 
+    console.log("resCart.body.data.cart");
+    console.log(resCart.body.data.cart);
     if (resCart.body.data.cart) {
       cart = {
         id: cartid,
@@ -41,6 +46,7 @@ export const load = async ({ params, locals, cookies }) => {
     }
   }
 
+  console.log("checkoutdata");
   const resproducts = await getAllCollections();
   console.log("checkoutdata");
   console.log(resproducts.status);
