@@ -24,7 +24,7 @@
       class="bg-base-100 shadow-lg rounded-xl flex gap-4 p-5 items-between">
       <img
         src={order?.lineItems?.edges[0]?.node?.variant?.product?.featuredImage
-          ?.url || "/src/static/images/flyer.png"}
+          ?.url || "/images/flyer.png"}
         class="rounded-xl w-[104px] h-[104px]"
         alt="" />
       <div class="flex flex-col w-full">

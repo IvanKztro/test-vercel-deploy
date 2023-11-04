@@ -144,7 +144,7 @@
     {:else}
       <div
         class="flex flex-col md:flex-row justify-between items-center gap-4 mt-2">
-        <img src="/src/static/images/creditcards_logo.png" alt="" srcset="" />
+        <img src="/images/creditcards_logo.png" alt="" srcset="" />
         <button
           on:click={addAmountTicket}
           type="button"

@@ -73,7 +73,7 @@
           </p>
           <div class="flex flex-col gap-2 my-4 pl-6">
             <div class="flex items-center gap-2">
-              <img src="/src/static/icons/calendar.svg" alt="" srcset="" />
+              <img src="/icons/calendar.svg" alt="" srcset="" />
               <h2 class="text-[20px] text-primary">Fecha</h2>
               <small class="text-primary">
                 {formatDate($currentEvent?.fbdata?.startDate)} -
@@ -81,7 +81,7 @@
               </small>
             </div>
             <div class="flex items-center gap-2">
-              <img src="/src/static/icons/time.svg" alt="" srcset="" />
+              <img src="/icons/time.svg" alt="" srcset="" />
               <h2 class="text-[20px] text-primary">Hora</h2>
               <small class="text-primary">
                 {$currentEvent?.fbdata?.startHour}</small>
@@ -91,7 +91,7 @@
             type="button"
             class="btn btn-neutral rounded-xl block mr-auto">
             <div class="flex gap-2 items-center">
-              <img src="/src/static/icons/ticket.svg" alt="" srcset="" />
+              <img src="/icons/ticket.svg" alt="" srcset="" />
               <span class="text-primary font-bold text-md">Entradas</span>
             </div>
           </button>
@@ -135,7 +135,7 @@
   {:else}
     <div class="flex flex-col justify-center items-center w-full gap-6">
       <h2 class="text-primary text-4xl mt-10">Este evento ya ha caducado</h2>
-      <img src="/src/static/images/sademoji.png" alt="" />
+      <img src="/images/sademoji.png" alt="" />
     </div>
   {/if}
 </div>

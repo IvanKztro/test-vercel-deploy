@@ -28,7 +28,7 @@
       <article class="grid grid-cols-2 gap-5 mt-8">
         <div class="flex flex-col gap-2">
           <div class="flex items-center gap-2">
-            <img src="/src/static/icons/calendar.svg" alt="" srcset="" />
+            <img src="/icons/calendar.svg" alt="" srcset="" />
             <p class="text-lg font-semibold text-primary">Fecha</p>
             <small class="text-primary">
               {$currentEvent?.fbdata?.startDate
@@ -40,13 +40,13 @@
             </small>
           </div>
           <div class="flex items-center gap-2">
-            <img src="/src/static/icons/time.svg" alt="" srcset="" />
+            <img src="/icons/time.svg" alt="" srcset="" />
             <p class="text-lg font-semibold text-primary">Hora</p>
             <small class="text-primary">
               {$currentEvent?.fbdata?.startHour}</small>
           </div>
           <div class="flex items-center text-sm font-medium gap-1">
-            <img src="/src/static/icons/map-purple.svg" alt="" srcset="" />
+            <img src="/icons/map-purple.svg" alt="" srcset="" />
 
             <p class="text-lg font-semibold text-primary">Lugar</p>
             <span class="text-primary font-medium text-sm">

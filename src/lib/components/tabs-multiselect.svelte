@@ -90,7 +90,7 @@
     <button
       class="flex items-center text-sm font-medium gap-2 mt-2 cursor-pointer hover:bg-gray-100 hover:rounded-3xl px-2"
       on:click={setAllTabs}>
-      <img src="/src/static/icons/showall.svg" class="w-" alt="" srcset="" />
+      <img src="/icons/showall.svg" class="w-" alt="" srcset="" />
       <span class="text-primary font-bold text-sm md:text-[14px]">
         {alltabs ? "Ocultar" : "Ver"} Todo
       </span>

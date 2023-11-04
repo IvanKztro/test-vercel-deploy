@@ -100,7 +100,7 @@
 
 <style>
   .forgot-password {
-    background-image: url("/src/static/images/resetpassword_imagen.png");
+    background-image: url("/images/resetpassword_imagen.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

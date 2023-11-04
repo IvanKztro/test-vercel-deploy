@@ -70,7 +70,7 @@
 </script>
 
 <div class="bg-base-100 join-item rounded h-11 flex py-3">
-  <img src="/src/static/icons/search.svg" alt="search icon" class="ml-4 mr-3" />
+  <img src="/icons/search.svg" alt="search icon" class="ml-4 mr-3" />
 </div>
 
 <!-- on:change={filterEvents} -->
@@ -83,10 +83,7 @@
 
 <div class="bg-base-100 join-item rounded h-11 flex py-3">
   <button on:click={toggleMenu}>
-    <img
-      src="/src/static/icons/search-settings.svg"
-      alt="search icon"
-      class="ml-4 mr-8" />
+    <img src="/icons/search-settings.svg" alt="search icon" class="ml-4 mr-8" />
   </button>
 </div>
 <div

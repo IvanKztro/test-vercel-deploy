@@ -1,10 +1,10 @@
 <script lang="ts">
   const gallery: any = [
-    "/src/static/images/events/bar.png",
-    "/src/static/images/events/concierto.png",
-    "/src/static/images/events/default.png",
-    "/src/static/images/events/ev_privado.png",
-    "/src/static/images/events/fiesta.png",
+    "/images/events/bar.png",
+    "/images/events/concierto.png",
+    "/images/events/default.png",
+    "/images/events/ev_privado.png",
+    "/images/events/fiesta.png",
   ];
 </script>
 

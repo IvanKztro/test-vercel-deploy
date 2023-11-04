@@ -33,7 +33,7 @@
     <div class="navbar-start">
       <div class="h-[24px] w-[250px]">
         <img
-          src="/src/static/images/dtickets-logo-v2.svg"
+          src="/images/dtickets-logo-v2.svg"
           alt="DTicker"
           class="h-6 w-[190px]" />
       </div>
@@ -55,7 +55,7 @@
                 <span
                   class="indicator-item badge badge-info text-neutral-100 badge-sm px-1 translate-x-[6px] -translate-y-[5px]"
                   >{notUnread}</span>
-                <img src="/src/static/icons/notification.svg" alt="bell icon" />
+                <img src="/icons/notification.svg" alt="bell icon" />
               </div>
             </label>
           </div>
@@ -68,7 +68,7 @@
                 <div
                   class="h-full flex flex-col justify-center items-center gap-5">
                   <img
-                    src="/src/static/images/hasnotnotifications.png"
+                    src="/images/hasnotnotifications.png"
                     class="w-[154px] h-[151px]"
                     alt=""
                     srcset="" />
@@ -84,7 +84,7 @@
         <div class="avatar hidden lg:flex">
           <div class="w-[48px] h-[48px] rounded-full">
             <img
-              src="/src/static/images/userprofile.png"
+              src="/images/userprofile.png"
               alt="userphoto"
               width="48"
               height="48" />
@@ -101,9 +101,7 @@
         <div class="dropdown dropdown-end h-[48px] ml-6 relative">
           <div class="flex items-center w-full h-full">
             <button class="btn btn-ghost btn-sm btn-circle">
-              <img
-                src="/src/static/icons/menu-arrow-down.svg"
-                alt="arrow down" />
+              <img src="/icons/menu-arrow-down.svg" alt="arrow down" />
             </button>
           </div>
           <button

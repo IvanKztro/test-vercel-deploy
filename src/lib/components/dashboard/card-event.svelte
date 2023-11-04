@@ -21,7 +21,7 @@
           style="background: linear-gradient(0deg, rgba(0, 0, 0, 0.60) 0%, rgba(0, 0, 0, 0.60) 100%), url('{product
             ?.images?.edges[0]?.node?.originalSrc
             ? product.images.edges[0].node.originalSrc
-            : '/src/static/images/events/default.png'}') no-repeat center center / cover;">
+            : '/images/events/default.png'}') no-repeat center center / cover;">
           <div class="card-body relative justify-center">
             <h2 class="uppercase font-bold text-[64px] text-center w-full">
               KPGS
@@ -49,7 +49,7 @@
               : "Vestibulum felis eu netus nullam habitasse "}
           </div>
           <div class="flex items-center text-sm font-medium gap-2">
-            <img src="/src/static/icons/map-purple.svg" alt="" />
+            <img src="/icons/map-purple.svg" alt="" />
             <span class="text-primary font-medium text-[14px]">
               {product?.fbdata?.locationName
                 ? product?.fbdata?.locationName

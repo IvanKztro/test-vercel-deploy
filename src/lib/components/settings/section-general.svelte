@@ -251,7 +251,7 @@
       >×</button>
     <div class="flex flex-col gap-4 justify-center items-center py-7">
       {#if !userdeleting}
-        <img src="/src/static/images/sademoji.png" alt="" />
+        <img src="/images/sademoji.png" alt="" />
         <h2 class="text-warning text-2xl font-medium">Sentimos verte partir</h2>
 
         <p class="font-medium text-center">

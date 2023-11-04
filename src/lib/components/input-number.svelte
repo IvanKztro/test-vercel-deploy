@@ -58,17 +58,10 @@
   <div class="w-[70%] flex gap-3">
     {#if isdeletable}
       <button class=" mb-5 mr-1 md:mr-4" type="button" on:click={deleteField}>
-        <img
-          src="/src/static/icons/delete-ticket.svg"
-          alt=""
-          srcset=""
-          class="w-6" />
+        <img src="/icons/delete-ticket.svg" alt="" srcset="" class="w-6" />
       </button>
     {/if}
-    <img
-      src="/src/static/icons/ticket-2.svg"
-      class="w-[30px] block mb-auto"
-      alt="" />
+    <img src="/icons/ticket-2.svg" class="w-[30px] block mb-auto" alt="" />
     <div class="w-full">
       <p class="font-medium text-[12px]">{title}</p>
       <p class="w-[95%] font-medium">{description ? description : ""}</p>

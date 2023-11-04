@@ -20,7 +20,7 @@
         {latestevent?.title || "Massa feugiat nibh"}
       </h2>
       <div class="flex gap-[2px] items-start">
-        <img src="/src/static/icons/map-purple.svg" class="w-3 mr-1" alt="" />
+        <img src="/icons/map-purple.svg" class="w-3 mr-1" alt="" />
         <span class="text-[10px] font-medium text-secondary break-keep">
           {latestevent?.fbdata?.locationName || "Campo Lago, Costa Rica"}</span>
       </div>

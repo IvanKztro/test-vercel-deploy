@@ -6,7 +6,7 @@
   <div class="collapse collapse-arrow bg-[#ECECF7]">
     <input type="checkbox" class="peer" />
     <div class="collapse-title flex items-center gap-3">
-      <img src="/src/static/icons/ticket-2-purple.svg" class="w-8" alt="" />
+      <img src="/icons/ticket-2-purple.svg" class="w-8" alt="" />
       <h3 class="text-[20px] font-[700]">{tickets.title}</h3>
     </div>
     <div class="collapse-content bg-base-100 shadow-lg border border-[1px]">
@@ -15,10 +15,7 @@
           <div>
             <section class="flex gap-2">
               <article class="w-[35%] flex gap-3 justify-start items-start">
-                <img
-                  src="/src/static/icons/profile-circle.svg"
-                  class="w-6"
-                  alt="" />
+                <img src="/icons/profile-circle.svg" class="w-6" alt="" />
                 <h3 class="text-primary text-xl font-normal">
                   Ticket 0{i + 1}
                 </h3>

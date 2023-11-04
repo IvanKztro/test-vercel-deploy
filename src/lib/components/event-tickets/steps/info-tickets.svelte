@@ -153,11 +153,7 @@
 
       <div class="flex flex-col gap-2 mx-3 mt-7">
         <div class="flex gap-2">
-          <img
-            src="/src/static/icons/ticket-2-purple.svg"
-            class="w-8"
-            alt=""
-            srcset="" />
+          <img src="/icons/ticket-2-purple.svg" class="w-8" alt="" srcset="" />
           <h2 class="text-primary text-[24px] font-bold">
             {$currentEvent?.title}
           </h2>

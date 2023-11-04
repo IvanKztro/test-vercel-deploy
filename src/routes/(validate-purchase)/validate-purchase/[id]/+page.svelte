@@ -68,7 +68,7 @@
   {:else if orderexist}
     <div class="flex flex-col items-center gap-2">
       <img
-        src="/src/static/images/pay_success.png"
+        src="/images/pay_success.png"
         class="w-[200px] h-[206px] mb-[1.5rem]"
         alt="" />
       <h2 class="text-2xl text-center text-success font-bold my-2">
@@ -89,7 +89,7 @@
   {:else}
     <div class="flex flex-col items-center gap-2">
       <img
-        src="/src/static/images/pay_denied.png"
+        src="/images/pay_denied.png"
         class="w-[200px] h-[206px] mb-[1.5rem]"
         alt="" />
       <h2 class="text-2xl text-error font-bold my-2">Ooops ¡Pedido fallido!</h2>

@@ -10,7 +10,7 @@
   let previewPhoto: any = null;
 
   onMount(() => {
-    imagensrc = $userData?.photoURL || "/src/static/images/userprofile.png";
+    imagensrc = $userData?.photoURL || "/images/userprofile.png";
   });
 
   function selectFile(e: any) {
@@ -35,7 +35,7 @@
       const urld = `/users/${$userData.firebaseID}/profile-photo`;
       obj?.click();
       fileinput = null;
-      imagensrc = "/src/static/images/userprofile.png";
+      imagensrc = "/images/userprofile.png";
     } else {
       console.log("image does not exist");
     }

@@ -23,10 +23,7 @@
   <section
     class="w-[500px] h-[660px] hidden lg:flex flex-col justify-end items-center sign_in rounded-l-md">
     <div class="flex flex-col mx-12 mb-12 gap-3">
-      <img
-        class="w-[180px]"
-        src="/src/static/images/dtickers-logo.png"
-        alt="" />
+      <img class="w-[180px]" src="/images/dtickers-logo.png" alt="" />
       <h4 class="text-[16px] font-[700] text-white mt-1">
         Ultrices mi enim viverra sit enim nisi molestie
       </h4>
@@ -149,7 +146,7 @@
   }
 
   .sign_in {
-    background-image: url("/src/static/images/logo_signIn.png");
+    background-image: url("/images/logo_signIn.png");
     background-size: cover;
   }
 

@@ -29,10 +29,7 @@
         class="tab py-4 px-2 md:px-6 h-auto w-full gap-4"
         class:font-bold={active(link)}
         class:font-medium={!active(link)}>
-        <img
-          class="w-7 md:w-6"
-          src="/src/static/icons/navbar/{link.icon}.svg"
-          alt="" />
+        <img class="w-7 md:w-6" src="/icons/navbar/{link.icon}.svg" alt="" />
         <span class="hidden md:inline text-secondary text-sm md:text-lg">
           {link.label}
         </span>

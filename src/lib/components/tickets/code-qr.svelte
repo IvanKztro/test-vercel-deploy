@@ -106,11 +106,7 @@
         class="btn btn-outline btn-primary rounded-2xl h-[3.5rem]"
         onclick="modalCodeQR.showModal()">
         <div class="flex gap-2 items-center">
-          <img
-            src="/src/static/icons/icon-printer.svg"
-            class="w-5"
-            alt=""
-            srcset="" />
+          <img src="/icons/icon-printer.svg" class="w-5" alt="" srcset="" />
           <span> IMPIRMER </span>
         </div>
       </button>
@@ -119,11 +115,7 @@
         class="btn btn-neutral text-primary rounded-2xl h-[3.5rem]"
         on:click={downloadQRCode}>
         <div class="flex gap-2 items-center">
-          <img
-            src="/src/static/icons/icon-download.svg"
-            class="w-5"
-            alt=""
-            srcset="" />
+          <img src="/icons/icon-download.svg" class="w-5" alt="" srcset="" />
           <span> DESCARGAR </span>
         </div>
       </button>

@@ -39,7 +39,7 @@
             ?.featuredImage?.url
             ? $currentOrderStore?.lineItems?.edges[0].node?.variant?.product
                 ?.featuredImage?.url
-            : "/src/static/images/flyer.png"}
+            : "/images/flyer.png"}
           class="w-full h-[300px] my-5 object-fill rounded-xl"
           alt="" />
 
@@ -108,7 +108,7 @@
               class="btn btn-neutral text-primary rounded-2xl h-[3.5rem]">
               <div class="flex gap-3 items-center">
                 <img
-                  src="/src/static/icons/icon-download.svg"
+                  src="/icons/icon-download.svg"
                   class="w-5"
                   alt=""
                   srcset="" />

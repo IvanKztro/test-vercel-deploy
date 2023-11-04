@@ -32,7 +32,7 @@
       ?.featuredImage?.url
       ? $currentOrderStore?.lineItems?.edges[0]?.node?.variant?.product
           ?.featuredImage?.url
-      : "/src/static/images/event_info.png"}
+      : "/images/event_info.png"}
     class="w-full my-7 h-[350px] rounded-xl object-cover object-center"
     alt="" />
 

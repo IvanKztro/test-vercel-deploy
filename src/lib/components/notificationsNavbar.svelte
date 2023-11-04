@@ -62,7 +62,7 @@
         on:click={() => goToNotification(not)}>
         <div class="block mb-auto w-auto">
           <img
-            src={`/src/static/icons/notifications/${not.icon}.svg`}
+            src={`/icons/notifications/${not.icon}.svg`}
             alt=""
             class="w-7" />
         </div>
@@ -85,7 +85,7 @@
         on:click={() => goToNotification(not)}>
         <div class="block mb-auto w-auto">
           <img
-            src={`/src/static/icons/notifications/${not.icon}.svg`}
+            src={`/icons/notifications/${not.icon}.svg`}
             alt=""
             class="w-7" />
         </div>
@@ -108,7 +108,7 @@
         on:click={() => goToNotification(not)}>
         <div class="block mb-auto w-auto">
           <img
-            src={`/src/static/icons/notifications/${not.icon}.svg`}
+            src={`/icons/notifications/${not.icon}.svg`}
             alt=""
             class="w-7" />
         </div>
