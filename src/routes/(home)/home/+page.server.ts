@@ -26,7 +26,17 @@ export const load: PageServerLoad = async ({ params, locals, cookies }) => {
     console.log(rescheckoutstatus);
     console.log(statuscheckout);
 
-    if (!statuscheckout) throw redirect(302, `/event/${statuscheckout.event}`);
+    if (statuscheckout) {
+      // throw redirect(302, `/event/${statuscheckout.event}`);
+      return {
+        products: datares,
+        user: locals.userdata,
+        statuscheckout,
+        urlredirect: `/event/${statuscheckout.event}`,
+        // notifications: resnoptifications,
+        forms: resforms,
+      };
+    }
     if (products) {
       const resnoptifications = await getNotifications(user.firebaseID);
       return {
