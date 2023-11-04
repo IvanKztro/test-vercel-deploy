@@ -1,7 +1,6 @@
 import {
   getAllCollections,
   getCheckoutByID,
-  getProduct,
   loadCart,
 } from "$lib/server/shopify";
 import { getEvents } from "$lib/server/firebase-collections";
