@@ -17,26 +17,16 @@ export const load = async ({ params, locals, cookies }) => {
   const cookiecheckout = cookies.get(
     `checkout-${params.id}-${locals.userdata.firebaseID}`
   );
-  console.log("cookiecheckout");
-  console.log(cookiecheckout);
   if (cookiecheckout) {
     const json = await JSON.parse(cookiecheckout);
-    console.log("json.id");
-    console.log(json.id);
     const checkoutres = await getCheckoutByID(json.id);
     checkoutdata = checkoutres.body.data.node;
   }
-
-  console.log("checkoutdata");
-  console.log(checkoutdata);
-  console.log(`cart-${handle}-id-${locals.userdata.firebaseID}`);
 
   const cartid = cookies.get(`cart-${handle}-id-${locals.userdata.firebaseID}`);
   if (cartid) {
     const resCart = await loadCart(cartid);
 
-    console.log("resCart.body.data.cart");
-    console.log(resCart.body.data.cart);
     if (resCart.body.data.cart) {
       cart = {
         id: cartid,
@@ -45,10 +35,7 @@ export const load = async ({ params, locals, cookies }) => {
     }
   }
 
-  console.log("checkoutdata");
   const resproducts = await getAllCollections();
-  console.log("checkoutdata");
-  console.log(resproducts.status);
 
   if (resproducts.status === 200) {
     products = resproducts.body?.data?.collections?.edges;

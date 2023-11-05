@@ -20,7 +20,6 @@
   export let data;
   const products = data?.products.edges;
 
-  console.log(data.checkout);
   onMount(() => {
     userData.set(data.user);
     productName.set(data.productname);
@@ -34,12 +33,10 @@
         data?.checkout
       );
       checkoutStore.set(data.checkout);
-      console.log(data.checkout);
     }
   });
 
   $: {
-    console.log($checkoutStore?.order);
     if ($checkoutStore?.order) {
       const orderidfb = $checkoutStore.customAttributes[0].key;
       const r = getOrderNumber($checkoutStore?.order.id);
