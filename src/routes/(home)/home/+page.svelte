@@ -19,9 +19,9 @@
 
   // @ts-ignore
   export let data;
-  console.log("------------data------------------");
-  console.log(data);
-  console.log("------------data------------------");
+  // console.log("------------data------------------");
+  // console.log(data);
+  // console.log("------------data------------------");
   productsStore.set(data?.products?.edges);
   productsFilterStore.set(data?.products?.edges);
   formsStore.set(data?.forms.category);
