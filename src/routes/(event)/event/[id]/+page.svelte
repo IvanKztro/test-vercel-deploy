@@ -11,8 +11,9 @@
   import { currentEvent, currentEventID } from "$lib/stores/event-store.js";
   import { userData } from "$lib/stores/user-store.js";
   import { onMount } from "svelte";
+  // import format from "date-fns/esm/format/index";
   import { format } from "date-fns";
-  import { es } from "date-fns/locale";
+  import es from "date-fns/locale/es/index";
   import { getOrderNumber, setCookie } from "$lib/utils.js";
   import { goto } from "$app/navigation";
 

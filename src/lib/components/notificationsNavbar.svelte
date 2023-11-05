@@ -1,8 +1,9 @@
 <script lang="ts">
   import { notificationsStore } from "$lib/stores/general-store";
+  // import format from "date-fns/esm/format/index";
   import { format } from "date-fns";
   import type { AppNotification } from "../../models/notifications";
-  import { es } from "date-fns/locale";
+  import es from "date-fns/locale/es/index.js";
   import { goto } from "$app/navigation";
 
   let notificationsToday: any = [];

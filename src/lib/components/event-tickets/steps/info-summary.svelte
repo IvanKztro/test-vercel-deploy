@@ -1,8 +1,9 @@
 <script lang="ts">
   import { currentEvent } from "$lib/stores/event-store";
   import FormDetails from "../form-details.svelte";
+  import format from "date-fns/esm/format/index";
   import { format } from "date-fns";
-  import { es } from "date-fns/locale";
+  import es from "date-fns/locale/es/index";
 
   function formatDate(date: any) {
     if (date) return format(date, "MMM dd, yyyy", { locale: es });
