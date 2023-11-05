@@ -15,6 +15,14 @@ declare namespace App {
   interface Stuff {}
 }
 
+declare module "date-fns/locale/index.js" {
+  import { es } from "date-fns/locale";
+  export { es };
+}
+// import es from "date-fns/locale/es/index";
+
+// import format from "date-fns/esm/format/index";
+
 // // See https://kit.svelte.dev/docs/types#app
 // // for information about these interfaces
 // declare global {
